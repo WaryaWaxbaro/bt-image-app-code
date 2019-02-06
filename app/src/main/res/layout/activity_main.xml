@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/colorSecondaryLight">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/layout_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_gravity="top"
+            android:layout_margin="5dp">
+
+            <Button
+                android:id="@+id/listen"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="server"
+                android:layout_weight="1"
+                android:textColor="@color/colorSecondary"
+                android:textSize="16sp"/>
+
+            <Button
+                android:id="@+id/listDevices"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="connect"
+                android:layout_weight="1"
+                android:textColor="@color/colorSecondary"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="status"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/colorSecondary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textAllCaps="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_margin="32dp"
+            android:layout_weight="1">
+
+            <GridView
+                android:id="@+id/GridView"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:padding="10dp"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+                android:numColumns="auto_fit"
+                android:columnWidth="90dp"
+                android:stretchMode="columnWidth"
+                android:gravity="center"
+                />
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:layout_gravity="bottom">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/select_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="select"
+                    android:layout_marginTop="50dp"
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/selected_image_image_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="0dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_gravity="bottom">
+
+                <Button
+                    android:id="@+id/send"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="send"
+                    android:layout_marginTop="50dp"
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
